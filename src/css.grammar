@@ -105,6 +105,10 @@ query {
   SelectorQuery { @specialize[@name=selector]<callee, "selector"> "(" selector ")" }
 }
 
+AnvilThemeColor {
+    "%color:" identifier+ "%"
+}
+
 value {
   VariableName |
   ValueName { identifier } |
@@ -114,7 +118,8 @@ value {
   StringLiteral |
   BinaryExpression { value !valueOp BinOp value } |
   CallExpression |
-  CallLiteral
+  CallLiteral |
+  AnvilThemeColor
 }
 
 CallLiteral {

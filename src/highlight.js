@@ -27,6 +27,7 @@ export const cssHighlighting = styleTags({
   ParenthesizedContent: t.special(t.name),
   ColorLiteral: t.color,
   StringLiteral: t.string,
+  AnvilThemeColor: t.color,
   ":": t.punctuation,
   "PseudoOp #": t.derefOperator,
   "; ,": t.separator,
